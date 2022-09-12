@@ -3,6 +3,7 @@ body {
   height: 100vh;
   margin: 0;
   background-color: black;
+  overflow-x: hidden;
 }
 
 .head_text {
@@ -23,7 +24,6 @@ body {
 
 /* child selectoren van een div */
 .page:nth-child(1) {
-  background: pink;
   background-image: url("../assets/thomas.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -31,23 +31,45 @@ body {
 }
 
 .page:nth-child(2) {
-  background: lightgreen;
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .page:nth-child(3) {
-  background: gold;
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .page:nth-child(4) {
-  background: pink;
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .page:nth-child(5) {
-  background: lightgreen;
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .page:nth-child(6) {
-  background: gold;
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page:nth-child(7) {
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .all {
@@ -61,4 +83,13 @@ body {
 
 .x.mandatory-scroll-snapping {
   scroll-snap-type: x mandatory;
+}
+
+/*Content at the bottem of the cards*/
+.content_container{
+  position: absolute;
+  bottom: 10px;
+  width: 50%;
+  margin-left: 20px;
+  color: white;
 }
