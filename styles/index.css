@@ -7,6 +7,7 @@ body {
   margin: 0;
   background-color: black;
   overflow-x: hidden;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .head_text {
@@ -76,11 +77,10 @@ body {
   background-position: center;
 }
 
-/*
 .page:hover{
-  width: 100%;
+  cursor: pointer;
+  filter: brightness(50%);
 }
-*/
 
 .all {
   font-size: 0;
@@ -98,12 +98,12 @@ body {
 /*Content at the bottem of the cards*/
 .content_container{ 
   width: 100%;
-  padding-left: 20px;
   color: white;
 }
 
-h2 {
-  bottom: 10px !important;
+.name_title {
+  vertical-align: bottom;
+  bottom: 10px;
   padding-left: 20px;
   color: white;
 }
