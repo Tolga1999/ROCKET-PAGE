@@ -1,3 +1,64 @@
-body{
-    background-color: red;
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: black;
+}
+
+.head_text {
+  color: white;
+  text-align: center;
+  position: fixed;
+  margin-left: 20px;
+}
+
+.page {
+  font-size: 16px;
+  /*reset font size*/
+  height: 100%;
+  width: 33.3%;
+  display: inline-block;
+  scroll-snap-align: start;
+}
+
+/* child selectoren van een div */
+.page:nth-child(1) {
+  background: pink;
+  background-image: url("/assets/thomas.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.page:nth-child(2) {
+  background: lightgreen;
+}
+
+.page:nth-child(3) {
+  background: gold;
+}
+
+.page:nth-child(4) {
+  background: pink;
+}
+
+.page:nth-child(5) {
+  background: lightgreen;
+}
+
+.page:nth-child(6) {
+  background: gold;
+}
+
+.all {
+  font-size: 0;
+  /*remove white space*/
+  height: 100vh;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.x.mandatory-scroll-snapping {
+  scroll-snap-type: x mandatory;
 }
