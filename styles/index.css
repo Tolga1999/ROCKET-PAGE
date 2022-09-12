@@ -24,7 +24,7 @@ body {
 /* child selectoren van een div */
 .page:nth-child(1) {
   background: pink;
-  background-image: url("/assets/thomas.png");
+  background-image: url("../assets/thomas.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
