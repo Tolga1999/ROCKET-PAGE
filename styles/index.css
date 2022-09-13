@@ -31,7 +31,7 @@ body {
 img {
   position: absolute;
   z-index: 10;
-  width: 15%;
+  width: 10%;
   margin-top: 2vh;
   margin-left: 1vw;
 }
@@ -45,7 +45,7 @@ section:nth-child(1) {
 }
 
 section:nth-child(2) {
-  background-image: url("https://picsum.photos/1000/1000");
+  background-image: url("../assets/Tolga2.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -129,18 +129,18 @@ section {
   margin: 0;
 }
 
-.subtext{
+.subtext {
   color: white;
   margin-top: -0.5vh;
 }
 
-button{
+button {
   color: white;
   background: none;
   border: none;
   font-size: 0.75em;
   font-weight: bold;
-  background-color: rgba(81,168,225,1);
+  background-color: rgba(81, 168, 225, 1);
   width: 6vw;
   height: 5vh;
   border-radius: 0.5em;
@@ -148,6 +148,6 @@ button{
   cursor: pointer;
 }
 
-button:hover{
-  background-color: rgba(223,195,76,1);
+button:hover {
+  background-color: rgba(223, 195, 76, 1);
 }
