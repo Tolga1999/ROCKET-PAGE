@@ -1,3 +1,6 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap");
+
 /*Laat de scrolbar niet zien*/
 ::-webkit-scrollbar {
   width: 2px;
@@ -14,6 +17,7 @@ body {
   margin: 0 !important;
   padding: 0 !important;
   font-family: "Poppins", sans-serif;
+  color: white;
 }
 
 .head_text {
@@ -22,6 +26,14 @@ body {
   position: fixed;
   margin-left: 20px;
   z-index: 10;
+}
+
+img {
+  position: absolute;
+  z-index: 10;
+  width: 15%;
+  margin-top: 2vh;
+  margin-left: 1vw;
 }
 
 /* child selectoren van een div */
@@ -74,10 +86,6 @@ section:nth-child(7) {
   background-position: center;
 }
 
-section:hover {
-  cursor: pointer;
-}
-
 /*Cards*/
 .outer-wrapper {
   width: 100vh;
@@ -100,34 +108,46 @@ section:hover {
 }
 
 section {
-  width: 33.3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   height: 100vh;
-  justify-content: end;
-  align-items: flex-end;
+  width: 33.3vw;
   scroll-snap-align: start;
   transition: 0.5s;
 }
 
 /*Content at the bottem of the cards*/
 .content_container {
-  width: 100%;
-  color: white;
+  width: 75vw;
+  margin-left: 4vw;
+  margin-bottom: 8vh;
+  z-index: 3;
 }
 
 .name_title {
-  bottom: 10px;
-  padding-left: 20px;
-  z-index: 10;
+  margin: 0;
 }
 
-img {
-  position: absolute;
-  z-index: 10;
-  width: 15%;
-  margin-top: 2vh;
-  margin-left: 1vw;
+.subtext{
+  color: white;
+  margin-top: -0.5vh;
 }
 
-/* FONTS */
+button{
+  color: white;
+  background: none;
+  border: none;
+  font-size: 0.75em;
+  font-weight: bold;
+  background-color: rgba(81,168,225,1);
+  width: 6vw;
+  height: 5vh;
+  border-radius: 0.5em;
+  transition: 0.5s;
+  cursor: pointer;
+}
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap");
+button:hover{
+  background-color: rgba(223,195,76,1);
+}
