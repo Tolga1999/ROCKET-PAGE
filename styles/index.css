@@ -98,14 +98,12 @@ section:hover {
   height: 100vw;
   transform: rotate(-90deg) translateX(-100vh);
   transform-origin: top left;
-  position: absolute;
   overflow-x: scroll;
   scroll-snap-type: y mandatory;
 }
 
 .all {
   display: flex;
-  flex: none;
   width: 300vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
