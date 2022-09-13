@@ -99,6 +99,7 @@ section:hover {
   transform: rotate(-90deg) translateX(-100vh);
   transform-origin: top left;
   position: absolute;
+  overflow-x: scroll;
 }
 
 .all {
@@ -107,7 +108,6 @@ section:hover {
   width: 300vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
-  overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
 
