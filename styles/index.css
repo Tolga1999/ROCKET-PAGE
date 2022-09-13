@@ -7,8 +7,7 @@ body {
   height: 100vh;
   margin: 0 !important;
   padding: 0 !important;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+  font-family: 'Poppins', sans-serif;}
 
 .head_text {
   color: white;
@@ -70,7 +69,7 @@ section:nth-child(7) {
 
 section:hover{
   cursor: pointer;
-  filter: brightness(50%);
+
 }
 
 /*Cards*/
@@ -114,8 +113,11 @@ section {
 }
 
 .name_title {
-  vertical-align: bottom;
   bottom: 10px;
   padding-left: 20px;
   z-index: 10;
 }
+
+/* FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
