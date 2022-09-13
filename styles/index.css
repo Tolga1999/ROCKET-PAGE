@@ -14,6 +14,7 @@ body {
   margin: 0 !important;
   padding: 0 !important;
   font-family: "Poppins", sans-serif;
+  background-color: black;
 }
 
 .head_text {
@@ -76,36 +77,35 @@ section:nth-child(7) {
 
 section:hover {
   cursor: pointer;
+  /*Misschien een leuk effect wanneer alles werkt: width: 100vw;*/
 }
 
 /*Cards*/
 .outer-wrapper {
+  margin-top: -2px;
   width: 100vh;
   height: 100vw;
   transform: rotate(-90deg) translateX(-100vh);
   transform-origin: top left;
-  overflow-y: scroll;
-  overflow-x: hidden;
   position: absolute;
 }
 
 .all {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
   display: flex;
-  flex-direction: row;
+  flex: none;
   width: 300vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 section {
   width: 33.3vw;
   height: 100vh;
-  justify-content: end;
-  align-items: flex-end;
-  scroll-snap-align: start;
   transition: 0.5s;
+  position: relative;
+  scroll-snap-align: start;
 }
 
 /*Content at the bottem of the cards*/
@@ -120,7 +120,8 @@ section {
   z-index: 10;
 }
 
-img {
+/*logo header*/
+.logo {
   position: absolute;
   z-index: 10;
   width: 15%;
