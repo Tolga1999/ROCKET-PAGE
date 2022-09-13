@@ -1,13 +1,20 @@
 /*Laat de scrolbar niet zien*/
-::-webkit-scrollbar{width:2px;height:2px;}
-::-webkit-scrollbar-button{width:2px;height:2px;}
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+::-webkit-scrollbar-button {
+  width: 2px;
+  height: 2px;
+}
 
 body {
   width: 100vw;
   height: 100vh;
   margin: 0 !important;
   padding: 0 !important;
-  font-family: 'Poppins', sans-serif;}
+  font-family: "Poppins", sans-serif;
+}
 
 .head_text {
   color: white;
@@ -67,9 +74,8 @@ section:nth-child(7) {
   background-position: center;
 }
 
-section:hover{
+section:hover {
   cursor: pointer;
-
 }
 
 /*Cards*/
@@ -97,7 +103,7 @@ section {
   width: 33.3vw;
   height: 100vh;
   justify-content: end;
-  align-items: flex-end; 
+  align-items: flex-end;
   scroll-snap-align: start;
   transition: 0.5s;
 }
@@ -107,7 +113,7 @@ section {
 }
 
 /*Content at the bottem of the cards*/
-.content_container{ 
+.content_container {
   width: 100%;
   color: white;
 }
@@ -118,6 +124,14 @@ section {
   z-index: 10;
 }
 
+img {
+  position: absolute;
+  z-index: 10;
+  width: 15%;
+  margin-top: 2vh;
+  margin-left: 1vw;
+}
+
 /* FONTS */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap");
