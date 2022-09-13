@@ -69,7 +69,6 @@ section:nth-child(7) {
 
 section:hover{
   cursor: pointer;
-
 }
 
 /*Cards*/
@@ -81,11 +80,11 @@ section:hover{
   overflow-y: scroll;
   overflow-x: hidden;
   position: absolute;
-  scroll-snap-type: x mandatory;
 }
 
 .all {
-  scroll-snap-type: x mandatory;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
   display: flex;
   flex-direction: row;
   width: 300vw;
@@ -100,10 +99,6 @@ section {
   align-items: flex-end; 
   scroll-snap-align: start;
   transition: 0.5s;
-}
-
-.scroll_begin {
-  scroll-snap-align: start;
 }
 
 /*Content at the bottem of the cards*/
