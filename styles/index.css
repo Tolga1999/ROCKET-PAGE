@@ -73,6 +73,7 @@ section:hover{
   filter: brightness(50%);
 }
 
+/*Cards*/
 .outer-wrapper {
   width: 100vh;
   height: 100vw;
@@ -81,13 +82,14 @@ section:hover{
   overflow-y: scroll;
   overflow-x: hidden;
   position: absolute;
+  scroll-snap-type: x mandatory;
 }
 
 .all {
   scroll-snap-type: x mandatory;
   display: flex;
   flex-direction: row;
-  width: 200vw;
+  width: 300vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
@@ -99,6 +101,10 @@ section {
   align-items: flex-end; 
   scroll-snap-align: start;
   transition: 0.5s;
+}
+
+.scroll_begin {
+  scroll-snap-align: start;
 }
 
 /*Content at the bottem of the cards*/
