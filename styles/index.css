@@ -45,7 +45,8 @@ section:nth-child(1) {
 }
 
 section:nth-child(2) {
-  background-image: url("../assets/Tolga2.png");
+  /* background-image: url("../assets/Tolga2.png"); */
+  background-image: url("https://picsum.photos/1000/1000");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -123,10 +124,11 @@ section {
 
 /*Content at the bottem of the cards*/
 .content_container {
+  position: relative;
   width: 75vw;
   margin-left: 4vw;
   margin-bottom: 8vh;
-  z-index: 3;
+  opacity: 100%;
 }
 
 .name_title {
@@ -154,4 +156,35 @@ button {
 
 button:hover {
   background-color: rgba(223, 195, 76, 1);
+}
+
+.card{
+  position: relative;
+  height: 100vh;
+  width: 33.33vw;
+}
+
+.overlay{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(212deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.5) 100%);
+  opacity: 0%;
+  transition: 0.5s; */
+}
+.overlay::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: linear-gradient(212deg, rgba(0,0,0,0) 0%, rgba(0, 8, 71, 0.5) 100%);
+  opacity: 0%;
+  transition: 0.5s;
+  mix-blend-mode: multiply;
+}
+
+.card:hover .overlay::before{
+  opacity: 100%;
 }
