@@ -28,7 +28,7 @@ body {
   z-index: 10;
 }
 
-img {
+.logo {
   position: absolute;
   z-index: 10;
   width: 15%;
@@ -88,7 +88,7 @@ section:nth-child(7) {
 
 section:hover {
   cursor: pointer;
-  /*Misschien een leuk effect wanneer alles werkt: width: 100vw;*/
+  filter: brightness(115%);
 }
 
 /*Cards*/
@@ -100,6 +100,7 @@ section:hover {
   transform-origin: top left;
   position: absolute;
   overflow-x: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 .all {
@@ -108,7 +109,6 @@ section:hover {
   width: 300vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
-  scroll-snap-type: y mandatory;
 }
 
 section {
@@ -117,9 +117,9 @@ section {
   justify-content: flex-end;
   height: 100vh;
   width: 33.3vw;
-  scroll-snap-align: start;
   transition: 0.5s;
   position: relative;
+  /*scroll snap*/
   scroll-snap-align: start;
 }
 
