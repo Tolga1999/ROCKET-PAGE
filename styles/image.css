@@ -1,0 +1,50 @@
+/* child selectoren van een div */
+section:nth-child(1) {
+  background-image: url("../assets/thomas.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(2) {
+  /* background-image: url("../assets/Tolga2.png"); */
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(3) {
+  background-image: url("../assets/Tim2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(4) {
+  background-image: url("../assets/Trisjan.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(5) {
+  background-image: url("../assets/Arexan.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(6) {
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(7) {
+  background-color: red;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
