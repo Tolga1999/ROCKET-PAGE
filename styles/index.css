@@ -15,15 +15,15 @@
 body {
   width: 100vw;
   height: 100vh;
-  margin: 0 !important;
-  padding: 0 !important;
+  margin: 0;
+  padding: 0;
   font-family: "Poppins", sans-serif;
   background-color: black;
   color: white;
 }
 
 :root {
-  font-size: min(calc(1em + 1vw), 4em);
+  font-size: min(calc(1em + 0.3vw), 4em);
 }
 
 .head_text {
@@ -77,6 +77,7 @@ section {
   width: 100vw;
   margin-left: 4vw;
   margin-bottom: 8vh;
+  padding-right: 1em;
 }
 
 
@@ -138,7 +139,7 @@ section {
 }
 
 .knop:hover {
-  background-color: rgba(223, 195, 76, 1);
+  background-color: rgb(27, 35, 72);
   transition: 0.1s;
   transition-delay: 0.01s;
 
@@ -177,12 +178,12 @@ section {
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
   }
-  
+
   .all {
     display: flex;
     width: 100vw;
   }
-  
+
   section {
     display: flex;
     flex-direction: column;
@@ -193,6 +194,42 @@ section {
     position: relative;
     /*scroll snap*/
     scroll-snap-align: start;
+  }
+
+  .content_container,
+  .card,
+  .section {
+    padding: 0.5em;
+  }
+
+  p {
+    padding-right: 3em;
+
+  }
+
+  .logo {
+    width: 27%;
+    margin-left: 1em;
+
+  }
+
+
+  .overlay::before {
+    content: '';
+    background: linear-gradient(212deg, rgba(0, 0, 0, 0) 0%, rgba(0, 8, 71, 0.5) 100%);
+    opacity: 100%;
+    mix-blend-mode: multiply;
+
+  }
+
+  .content_container h2,
+  .content_container p,
+  .content_container .knop {
+    transition: 0.3s;
+    /* transition-delay: 0.8s; */
+    transition-timing-function: ease;
+    transform: translateY(0px);
+    opacity: 1;
   }
 }
 
