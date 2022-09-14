@@ -10,43 +10,43 @@ section:nth-child(1) {
 }
 
 section:nth-child(2) {
-  background-image: url("https://picsum.photos/1000/1000");
+  background-image: url("../assets/Tolga.png");
 }
 
 section:nth-child(3) {
-  background-image: url("https://picsum.photos/1000/1000");
+  background-image: url("../assets/Milan.png");
 }
 
 section:nth-child(4) {
-  background-image: url("https://picsum.photos/1000/1000");
+  background-image: url("../assets/Isandro.png");
 }
 
 section:nth-child(5) {
-  background-image: url("https://picsum.photos/1000/1000");
+  background-image: url("../assets/Joelle.png");
 }
 
 section:nth-child(6) {
-  background-image: url("https://picsum.photos/1000/1000");
+  background-image: url("../assets/Sanne.png");
 }
 
 section:nth-child(7) {
-  background-image: url("https://picsum.photos/1000/1000");
+  background-image: url("../assets/Tim.png");
 }
 
 section:nth-child(8) {
-  background-image: url("https://picsum.photos/1000/1000");
+  background-image: url(../assets/Wesley.png);
 }
 
 section:nth-child(9) {
-  background-image: url("https://picsum.photos/1000/1000");
+  background-image: url(../assets/Sander.png);
 }
 
 section:nth-child(10) {
-  background-image: url("https://picsum.photos/1000/1000");
+  background-image: url(../assets/Trisjan.png);
 }
 
 section:nth-child(11) {
-  background-image: url("https://picsum.photos/1000/1000");
+  background-image: url(../assets/Marco.png);
 }
 
 section:nth-child(12) {
