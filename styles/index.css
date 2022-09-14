@@ -22,6 +22,10 @@ body {
   color: white;
 }
 
+:root {
+  font-size: min(calc(1em + 1vw), 4em);
+}
+
 .head_text {
   color: white;
   text-align: center;
@@ -36,59 +40,6 @@ body {
   margin-top: 2vh;
   margin-left: 1vw;
 }
-
-/* child selectoren van een div */
-section:nth-child(1) {
-  background-image: url("../assets/thomas.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-section:nth-child(2) {
-  /* background-image: url("../assets/Tolga2.png"); */
-  background-image: url("https://picsum.photos/1000/1000");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-section:nth-child(3) {
-  background-image: url("https://picsum.photos/1000/1000");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-section:nth-child(4) {
-  background-image: url("https://picsum.photos/1000/1000");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-section:nth-child(5) {
-  background-image: url("https://picsum.photos/1000/1000");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-section:nth-child(6) {
-  background-image: url("https://picsum.photos/1000/1000");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-section:nth-child(7) {
-  background-color: red;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-
 
 /*Cards*/
 .outer-wrapper {
@@ -123,7 +74,7 @@ section {
 /*Content at the bottem of the cards*/
 .content_container {
   position: relative;
-  width: 75vw;
+  width: 100vw;
   margin-left: 4vw;
   margin-bottom: 8vh;
 }
@@ -168,17 +119,16 @@ section {
 .subtext {
   color: white;
   margin-top: -0.5vh;
+  font-size: 0.7em;
 }
 
 .knop {
   color: white;
   background: none;
   border: none;
-  font-size: 0.75em;
-  font-weight: bold;
+  font-size: 0.7em;
   background-color: rgba(81, 168, 225, 1);
-  width: 6vw;
-  height: 5vh;
+  padding: 10px 20px 10px 20px;
   border-radius: 0.5em;
   cursor: pointer;
   transition: 0.01ms;
@@ -216,4 +166,209 @@ section {
 
 .card:hover .overlay::before {
   opacity: 100%;
+}
+
+/*--------------------Mobiel view--------------------*/
+@media screen and (max-width: 480px) {
+  .outer-wrapper {
+    margin-top: -2px;
+    width: 100vh;
+    height: 100vw;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
+  
+  .all {
+    display: flex;
+    width: 100vw;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+    width: 100vw !important;
+    transition: 0.5s;
+    position: relative;
+    /*scroll snap*/
+    scroll-snap-align: start;
+  }
+}
+
+/*---------- Opmaak van de visitekaartjes in childs ---------*/
+section:nth-child(1) {
+  background-image: url("../assets/thomas.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(2) {
+  /* background-image: url("../assets/Tolga2.png"); */
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(3) {
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(4) {
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(5) {
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(6) {
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(7) {
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(8) {
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(9) {
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(10) {
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(11) {
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(12) {
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(13) {
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(14) {
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(15) {
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(16) {
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(17) {
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(18) {
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(19) {
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(20) {
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(21) {
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(22) {
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(23) {
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(24) {
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+section:nth-child(25) {
+  background-image: url("https://picsum.photos/1000/1000");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
