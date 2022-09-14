@@ -139,7 +139,7 @@ section {
 }
 
 .knop:hover {
-  background-color: rgb(27, 35, 72);
+  background-color:  rgba(223, 195, 76, 1);
   transition: 0.1s;
   transition-delay: 0.01s;
 
