@@ -213,7 +213,6 @@ section {
 
   }
 
-
   .overlay::before {
     content: '';
     background: linear-gradient(212deg, rgba(0, 0, 0, 0) 0%, rgba(0, 8, 71, 0.5) 100%);
