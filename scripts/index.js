@@ -1,1 +1,0 @@
-window.scrollTo(20, 0);

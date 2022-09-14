@@ -22,8 +22,9 @@ body {
   color: white;
 }
 
+/* sizing font (nog moeilijk te begrijpen)*/
 :root {
-  font-size: min(calc(1em + 0.3vw), 4em);
+  font-size: min(calc(1.3em + 0.05vw), 4em);
 }
 
 .head_text {
@@ -158,7 +159,7 @@ width: 20vw;
 }
 
 .knop:hover {
-  background-color:  rgba(223, 195, 76, 1);
+  background-color: rgba(223, 195, 76, 1);
   transition: 0.1s;
   transition-delay: 0.01s;
 
@@ -242,7 +243,6 @@ width: 20vw;
     background: linear-gradient(212deg, rgba(0, 0, 0, 0) 0%, rgba(0, 8, 71, 0.5) 100%);
     opacity: 100%;
     mix-blend-mode: multiply;
-
   }
 
   .content_container h2,
@@ -254,10 +254,45 @@ width: 20vw;
     transform: translateY(0px);
     opacity: 1;
   }
+  
   .mainschrift {
     font-size: 1em;
     padding-right: 0.3vw;
     display: block;
     width: 80vw;
     }
+}
+
+/*--------------------Tablet view--------------------*/
+@media screen and (max-width: 1024px) {
+  .card {
+    width: 50vw;
+  }
+
+  .logo {
+    width: 20vw;
+  }
+
+  /* ANIMEREN UITZETTEN*/
+    .overlay::before {
+    content: '';
+    opacity: 0; /* opacity op 0% gezet OOK bij hover van overlay */
+  }
+  
+  .content_container h2,
+  .content_container p,
+  .content_container .knop {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .card:hover .overlay::before {
+    opacity: 0; /* tweede gedeelte opacity op 0% gezet */
+  }
+  /* ---------------- */
+
+  /* hover hiden door zelfde background color */
+  .knop:hover {
+    background-color: rgba(81, 168, 225, 1);
+  }
 }
