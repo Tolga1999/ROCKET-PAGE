@@ -194,6 +194,30 @@ width: 20vw;
   transition: 1s;
 }
 
+/*Pijl op de eerste slide*/
+.arrow {
+  height: 1em;
+  margin-left: 1em;
+  display: inline-block;
+}
+
+.first_text {
+  margin-bottom: 2.5em;
+  font-size: 3em;
+}
+
+.pulse {
+  -webkit-animation: pulsate 1.5s ease-out;
+  -webkit-animation-iteration-count: infinite; 
+  opacity: 0.3;
+}
+
+@-webkit-keyframes pulsate {
+  0% { opacity: 0; }
+  50% { opacity: 1.0; }
+  100% { opacity: 0; }
+}
+
 /*--------------------Mobiel view--------------------*/
 @media screen and (max-width: 480px) {
   .outer-wrapper {

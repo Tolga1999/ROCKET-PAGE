@@ -19,7 +19,16 @@
 
             <section class="frontpage">
                     <div class="front">
-                        <h2 class="name_title">Swipe ----></h2>
+                        <h2 class="first_text name_title pulse">
+                            <script>
+                                var viewportWidth = window.innerWidth || document.documentElement.clientWidth; //Zet de breete in pixels van de viewport
+                                if(viewportWidth > 1024){ 
+                                    document.write("Scroll"); //Desktop
+                                }else{
+                                    document.write("Swipe"); //Tablet of mobiel
+                                }
+                            </script>
+                        </h2>
                         <p class="mainschrift">Hello world, dit is de A squad page. Deze pagina kun je bekijken door te scrollen of te swipen. </p>
                     </div>
             </section>
