@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/image.css" />
     <link rel="icon" type="image/png" href="assets/fav.png" />
-    <script src="scripts/index.js"></script>
+    <!-- <script src="scripts/index.js" async></script> --> <!-- async doesn't potentially block DOM -->
 
 </head>
 
@@ -22,24 +22,11 @@
     </header>
     
     <div class="outer-wrapper">
-        
-    
-        <div class="all x mandatory-scroll-snapping" id="container">
-
-          
-
+        <div class="all">
             <section class="frontpage">
                     <div class="front">
-                        <h2 class="first_text name_title pulse">
-                            <script>
-                                var viewportWidth = window.innerWidth || document.documentElement.clientWidth; //Zet de breete in pixels van de viewport
-                                if(viewportWidth > 1024){ 
-                                    document.write("Scroll"); //Desktop
-                                }else{
-                                    document.write("Swipe"); //Tablet of mobiel
-                                }
-                            </script>
-                        </h2>
+                        <h2 class="first_text_scroll name_title pulse">Scroll</h2>
+                        <h2 class="first_text_swipe name_title pulse">Swipe</h2>
                         <p class="first_subtext mainschrift">Hello world, dit is de A squad page. Deze pagina kun je bekijken door te scrollen of te swipen. </p>
                     </div>
             </section>
