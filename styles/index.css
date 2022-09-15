@@ -225,12 +225,12 @@ width: 20vw;
 }
 
 .pulse {
-  -webkit-animation: pulsate 1.5s ease-out;
-  -webkit-animation-iteration-count: infinite; 
+  animation: pulsate 1.5s ease-out;
+  animation-iteration-count: infinite; 
   opacity: 0.3;
 }
 
-@-webkit-keyframes pulsate {
+@keyframes pulsate {
   0% { opacity: 0; }
   50% { opacity: 1.0; }
   100% { opacity: 0; }
