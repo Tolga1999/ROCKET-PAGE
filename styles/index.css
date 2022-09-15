@@ -40,6 +40,7 @@ body {
   width: 10%;
   margin-top: 2vh;
   margin-left: 1vw;
+  cursor: pointer;
 }
 .raket {
   position: absolute;
@@ -48,6 +49,8 @@ body {
   margin-top: 2vh;
   margin-left: 1vw;
   transition: 1s;
+  cursor: pointer;
+  display: block;
 
 }
 .raket:hover {
@@ -226,12 +229,12 @@ width: 20vw;
 }
 
 .pulse {
-  -webkit-animation: pulsate 1.5s ease-out;
-  -webkit-animation-iteration-count: infinite; 
+  animation: pulsate 1.5s ease-out;
+  animation-iteration-count: infinite; 
   opacity: 0.3;
 }
 
-@-webkit-keyframes pulsate {
+@keyframes pulsate {
   0% { opacity: 0; }
   50% { opacity: 1.0; }
   100% { opacity: 0; }
@@ -342,3 +345,5 @@ width: 20vw;
     background-color: rgba(81, 168, 225, 1);
   }
 }
+
+/* VOEG NOG EEN GRADIANT BACKGROUND TOE AAN TABLET FORMAAT!!! */
