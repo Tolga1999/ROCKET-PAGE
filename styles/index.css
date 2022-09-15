@@ -115,8 +115,7 @@ background-color: transparent;
 
 .raket:hover {
   transform: translate(-80px, -80px);
-  transition: ease-in;
-  transition: 1s;
+  transition: ease-in 0.7s;
 
 }
 
@@ -265,6 +264,7 @@ section {
 .first_subtext {
   margin-top: 20vh;
   color: #66e5bf;
+  font-weight: bold;
 }
 
 .pulse {
@@ -381,6 +381,10 @@ section {
 
   .content_container{
     font-size: 1.75em;
+  }
+
+  .first_subtext {
+    margin-top: 12.5vh;
   }
 
   .subtext{
