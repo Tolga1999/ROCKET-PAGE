@@ -221,6 +221,10 @@ width: 20vw;
   font-size: 3em;
 }
 
+.first_subtext {
+  color: #66e5bf;
+}
+
 .pulse {
   -webkit-animation: pulsate 1.5s ease-out;
   -webkit-animation-iteration-count: infinite; 
@@ -276,8 +280,6 @@ width: 20vw;
     margin-left: 1em;
 
   }
-
-
 
   .overlay::before {
     content: '';
