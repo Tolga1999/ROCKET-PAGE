@@ -12,6 +12,12 @@
   height: 0px;
 }
 
+.wrap {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.612);
+  display: flex;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -22,9 +28,70 @@ body {
   color: white;
 }
 
+.menu {
+cursor: pointer;
+margin-left: auto;
+margin-right: 10px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: left;
+  gap: 2%;
+  max-width: 100vw;
+  margin: auto;
+  padding: 20vh 4vw;
+  padding-left: 10vw;
+  background-color: rgb(31, 30, 30);
+  overflow: hidden;
+  z-index: 20;
+  transition: 2s;
+  
+
+}
+
+.kaartje {
+display: flex;
+flex-direction: column ;
+margin-bottom: 3%;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+
+#onderschrift {
+font-size: .7em;
+margin-top: -30px;
+
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 17vw;
+  height: 25vw;
+  object-fit: cover;
+  border-radius: 0.2em;
+  box-shadow: none;
+  cursor: pointer;
+  transition: 0.5s all ease;
+
+
+}
+
+.gallery img:hover {
+  -webkit-filter: brightness(.5);
+  filter: brightness(.5);
+}
+
 /* sizing font (nog moeilijk te begrijpen)*/
 :root {
   font-size: min(calc(1.3em + 0.05vw), 4em);
+}
+
+.head {
+background-color: transparent;
 }
 
 .head_text {
@@ -32,31 +99,35 @@ body {
   text-align: center;
   position: fixed;
   margin-left: 20px;
+  
 }
+
 
 .logo {
   position: absolute;
   z-index: 9;
   width: 10%;
   margin-top: 2vh;
-  margin-left: 1vw;
+  margin-left: 2vw;
   cursor: pointer;
 }
+
 .raket {
   position: absolute;
   z-index: 10;
   width: 10%;
   margin-top: 2vh;
-  margin-left: 1vw;
+  margin-left: 2vw;
   transition: 1s;
   cursor: pointer;
   display: block;
 
 }
+
 .raket:hover {
-  transform:translate(-80px,-80px);
-transition: ease-in;
-transition: 1s;
+  transform: translate(-80px, -80px);
+  transition: ease-in;
+  transition: 1s;
 
 }
 
@@ -69,7 +140,7 @@ transition: 1s;
   transform-origin: top left;
   overflow-x: scroll;
   scroll-snap-type: y mandatory;
-  
+
 }
 
 .all {
@@ -77,6 +148,7 @@ transition: 1s;
   width: 300vw;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
+
 }
 
 section {
@@ -113,10 +185,10 @@ section {
 }
 
 .mainschrift {
-font-size: 1em;
-padding-right: 0.3vw;
-display: block;
-width: 20vw;
+  font-size: 1em;
+  padding-right: 0.3vw;
+  display: block;
+  width: 20vw;
 
 }
 
@@ -279,7 +351,7 @@ width: 20vw;
   }
 
   .logo {
-    width: 27%;
+    width: 12%;
     margin-left: 1em;
 
   }
@@ -300,20 +372,21 @@ width: 20vw;
     transform: translateY(0px);
     opacity: 1;
   }
-  
+
   .mainschrift {
     font-size: 1em;
     padding-right: 0.3vw;
     display: block;
     width: 80vw;
-    }
+  }
 }
 
 /*--------------------Tablet view--------------------*/
 @media screen and (max-width: 1024px) {
-  .frontpage{
+  .frontpage {
     width: 50vw;
   }
+
   .card {
     width: 50vw;
   }
@@ -323,11 +396,12 @@ width: 20vw;
   }
 
   /* ANIMEREN UITZETTEN*/
-    .overlay::before {
+  .overlay::before {
     content: '';
-    opacity: 0; /* opacity op 0% gezet OOK bij hover van overlay */
+    opacity: 0;
+    /* opacity op 0% gezet OOK bij hover van overlay */
   }
-  
+
   .content_container h2,
   .content_container p,
   .content_container .knop {
@@ -336,8 +410,10 @@ width: 20vw;
   }
 
   .card:hover .overlay::before {
-    opacity: 0; /* tweede gedeelte opacity op 0% gezet */
+    opacity: 0;
+    /* tweede gedeelte opacity op 0% gezet */
   }
+
   /* ---------------- */
 
   /* hover hiden door zelfde background color */
