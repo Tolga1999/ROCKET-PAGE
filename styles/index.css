@@ -36,10 +36,28 @@ body {
 
 .logo {
   position: absolute;
+  z-index: 9;
+  width: 10%;
+  margin-top: 2vh;
+  margin-left: 1vw;
+  cursor: pointer;
+}
+.raket {
+  position: absolute;
   z-index: 10;
   width: 10%;
   margin-top: 2vh;
   margin-left: 1vw;
+  transition: 1s;
+  cursor: pointer;
+  display: block;
+
+}
+.raket:hover {
+  transform:translate(-80px,-80px);
+transition: ease-in;
+transition: 1s;
+
 }
 
 /*Cards*/
@@ -194,6 +212,30 @@ width: 20vw;
   transition: 1s;
 }
 
+/*Pijl op de eerste slide*/
+.arrow {
+  height: 1em;
+  margin-left: 1em;
+  display: inline-block;
+}
+
+.first_text {
+  margin-bottom: 2.5em;
+  font-size: 3em;
+}
+
+.pulse {
+  -webkit-animation: pulsate 1.5s ease-out;
+  -webkit-animation-iteration-count: infinite; 
+  opacity: 0.3;
+}
+
+@-webkit-keyframes pulsate {
+  0% { opacity: 0; }
+  50% { opacity: 1.0; }
+  100% { opacity: 0; }
+}
+
 /*--------------------Mobiel view--------------------*/
 @media screen and (max-width: 480px) {
   .outer-wrapper {
@@ -237,6 +279,8 @@ width: 20vw;
     margin-left: 1em;
 
   }
+
+
 
   .overlay::before {
     content: '';

@@ -8,18 +8,30 @@
     <title>Rocket page | Home</title>
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/image.css" />
+    <link rel="icon" type="image/png" href="assets/fav.png" />
+
 </head>
 
 <body>
     <header>
-        <img class="logo" src="assets/rocketlogo-01.png" alt="Logo" />
+        <img class="logo" src="assets/rocket_tekst-01.png" alt="Team Rocket" />
+        <img class="raket" src="assets/rocket_icon-01.png" alt="Raket" />
     </header>
     <div class="outer-wrapper">
         <div class="all x mandatory-scroll-snapping" id="container">
 
             <section class="frontpage">
                     <div class="front">
-                        <h2 class="name_title">Swipe ----></h2>
+                        <h2 class="first_text name_title pulse">
+                            <script>
+                                var viewportWidth = window.innerWidth || document.documentElement.clientWidth; //Zet de breete in pixels van de viewport
+                                if(viewportWidth > 1024){ 
+                                    document.write("Scroll"); //Desktop
+                                }else{
+                                    document.write("Swipe"); //Tablet of mobiel
+                                }
+                            </script>
+                        </h2>
                         <p class="mainschrift">Hello world, dit is de A squad page. Deze pagina kun je bekijken door te scrollen of te swipen. </p>
                     </div>
             </section>
@@ -36,8 +48,8 @@
             <section class="card background_format">
                 <div class="overlay">
                     <div class="content_container">
-                        <h2 class="name_title">Bart</h2>
-                        <p class="subtext">Naam Achternaam, Visitekaartje week 1</p>
+                        <h2 class="name_title">Tolga</h2>
+                        <p class="subtext">Tolga Doganer, Visitekaartje week 1</p>
                         <button class="knop" href="">BEKIJK</button>
                     </div>
                 </div>
@@ -45,8 +57,8 @@
             <section class="card background_format">
                 <div class="overlay">
                     <div class="content_container">
-                        <h2 class="name_title">Bart</h2>
-                        <p class="subtext">Naam Achternaam, Visitekaartje week 1</p>
+                        <h2 class="name_title">Milan</h2>
+                        <p class="subtext">Milan Achternaam, Visitekaartje week 1</p>
                         <button class="knop" href="">BEKIJK</button>
                     </div>
                 </div>
@@ -54,8 +66,8 @@
             <section class="card background_format">
                 <div class="overlay">
                     <div class="content_container">
-                        <h2 class="name_title">Bart</h2>
-                        <p class="subtext">Naam Achternaam, Visitekaartje week 1</p>
+                        <h2 class="name_title">Isandro</h2>
+                        <p class="subtext">Isandro Castillo, Visitekaartje week 1</p>
                         <button class="knop" href="">BEKIJK</button>
                     </div>
                 </div>
@@ -63,8 +75,8 @@
             <section class="card background_format">
                 <div class="overlay">
                     <div class="content_container">
-                        <h2 class="name_title">Bart</h2>
-                        <p class="subtext">Naam Achternaam, Visitekaartje week 1</p>
+                        <h2 class="name_title">Joëlle</h2>
+                        <p class="subtext">Joëlle Verspeek, Visitekaartje week 1</p>
                         <button class="knop" href="">BEKIJK</button>
                     </div>
                 </div>
@@ -72,8 +84,8 @@
             <section class="card background_format">
                 <div class="overlay">
                     <div class="content_container">
-                        <h2 class="name_title">Bart</h2>
-                        <p class="subtext">Naam Achternaam, Visitekaartje week 1</p>
+                        <h2 class="name_title">Sanne</h2>
+                        <p class="subtext">Sanne van Seeventer, Visitekaartje week 1</p>
                         <button class="knop" href="">BEKIJK</button>
                     </div>
                 </div>
@@ -260,6 +272,9 @@
             </section>
         </div>
     </div>
+
+
+    <h1>hfhfh</h1>
 </body>
 
 </html>
