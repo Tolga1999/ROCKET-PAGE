@@ -398,10 +398,10 @@ section {
   /* ANIMEREN UITZETTEN*/
   .overlay::before {
     content: '';
-    opacity: 0;
-    /* opacity op 0% gezet OOK bij hover van overlay */
-  }
+    opacity: 100%;
 
+  }
+/* opacity: bij allebei weer aangezet anders kon je de tekst niet lezen op sommige afbeeldingen; */
   .content_container h2,
   .content_container p,
   .content_container .knop {
@@ -410,8 +410,8 @@ section {
   }
 
   .card:hover .overlay::before {
-    opacity: 0;
-    /* tweede gedeelte opacity op 0% gezet */
+    opacity: 100;
+   
   }
 
   /* ---------------- */
