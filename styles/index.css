@@ -379,6 +379,14 @@ section {
     width: 20vw;
   }
 
+  .content_container{
+    font-size: 1.75em;
+  }
+
+  .subtext{
+    width: 40vw;
+  }
+
   /* ANIMEREN UITZETTEN*/
   .overlay::before {
     content: '';
@@ -394,7 +402,7 @@ section {
   }
 
   .card:hover .overlay::before {
-    opacity: 100;
+    opacity: 1;
    
   }
 
@@ -414,5 +422,3 @@ section {
   }
   
 }
-
-/* VOEG NOG EEN GRADIANT BACKGROUND TOE AAN TABLET FORMAAT!!! */
