@@ -322,6 +322,10 @@ section {
     padding: 0.5em;
   }
 
+  .subtext {
+    font-size: 0.5em;
+  }
+
   p {
     padding-right: 3em;
 
