@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/image.css" />
     <link rel="icon" type="image/png" href="assets/fav.png" />
-    <!-- <script src="scripts/index.js" async></script> --> <!-- async doesn't potentially block DOM -->
+    <script src="scripts/index.js" async></script> <!-- async doesn't potentially block DOM -->
 
 </head>
 
@@ -20,6 +20,7 @@
         <img class="raket" src="assets/rocket_icon-01.png" alt="Raket" />
     
     </header>
+    <button class="galleryButton" onclick="menuFunction()">GALLERIJ</button>
     
     <div class="outer-wrapper">
         <div class="all">
@@ -268,7 +269,7 @@
         </div>
     </div>
     
-    <div class="gallery">
+    <div id="gallery">
         <div class="kaartje">
             <img src="assets/Milan.png" alt="milan">
             <H5>Milan Rolie</H5>
