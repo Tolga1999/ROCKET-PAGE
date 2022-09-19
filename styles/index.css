@@ -33,8 +33,11 @@ margin-right: 10px;
 }
 
 /* OVERVIEW MENU */
-.gallery {
-  display: flex;
+#gallery {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -49,8 +52,18 @@ margin-right: 10px;
   z-index: 20;
   transition: 2s;
   /* transform: translateY(-190vh); */
-  
+  z-index: 1;
+}
 
+.galleryButton{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: purple;
+  width: 20vw;
+  height: 5vh;
+  z-index: 2;
+  cursor: pointer;
 }
 
 .kaartje {
@@ -67,7 +80,7 @@ margin-top: -30px;
 
 }
 
-.gallery img {
+#gallery img {
   width: 100%;
   max-width: 17vw;
   height: 25vw;
@@ -80,7 +93,7 @@ margin-top: -30px;
 
 }
 
-.gallery img:hover {
+#gallery img:hover {
   -webkit-filter: brightness(.5);
   filter: brightness(.5);
 }
