@@ -370,10 +370,12 @@ section {
   }
 
   .logo {
+    position: fixed;
     width: 12%;
     margin-left: 1em;
   }
   .raket {
+    position: fixed;
     width: 20%;
     margin-left: 5%;
   }
@@ -437,6 +439,9 @@ section {
 margin-bottom: 40px;
 margin-top: -30px;
 
+  }
+  .galleryButton {
+    position: fixed;
   }
 }
 
