@@ -6,12 +6,23 @@
 }
 
 section:nth-child(1) {
-  background: #050542;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 section:nth-child(2) {
   background-image: url("../assets/thomas.png");
-  
 }
 section:nth-child(3) {
   background-image: url("../assets/Tolga.png");
@@ -54,15 +65,15 @@ section:nth-child(12) {
 }
 
 section:nth-child(13) {
-  background-image: url("https://picsum.photos/1000/1000");
+  background-image: url("../assets/Arexan.png");
 }
 
 section:nth-child(14) {
-  background-image: url("https://picsum.photos/1000/1000");
+  background-image: url("../assets/Robin.png");
 }
 
 section:nth-child(15) {
-  background-image: url("https://picsum.photos/1000/1000");
+  background-image: url("../assets/Celine.png");
 }
 
 section:nth-child(16) {
