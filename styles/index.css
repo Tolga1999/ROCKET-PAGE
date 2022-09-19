@@ -61,6 +61,10 @@ body {
   text-decoration: none;
 }
 
+.gallery_link:hover {
+  text-decoration: underline;
+}
+
 /* #gallery: {
 transform: translatey(-190vh);
 transition: 1.5s;
