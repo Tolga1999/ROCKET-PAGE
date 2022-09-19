@@ -24,6 +24,7 @@ section:nth-child(1) {
 section:nth-child(2) {
   background-image: url("../assets/thomas.png");
 }
+
 section:nth-child(3) {
   background-image: url("../assets/Tolga.png");
 }
@@ -101,17 +102,5 @@ section:nth-child(21) {
 }
 
 section:nth-child(22) {
-  background-image: url("https://picsum.photos/1000/1000");
-}
-
-section:nth-child(23) {
-  background-image: url("https://picsum.photos/1000/1000");
-}
-
-section:nth-child(24) {
-  background-image: url("https://picsum.photos/1000/1000");
-}
-
-section:nth-child(25) {
   background-image: url("https://picsum.photos/1000/1000");
 }
