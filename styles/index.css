@@ -409,7 +409,7 @@ section {
   }
 
   #gallery img {
-    width: 80vh;
+    width: 400px;
     max-width: 95%;
     height: 300px;
     object-fit: cover;
