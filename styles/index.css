@@ -410,8 +410,8 @@ section {
 
   #gallery img {
     width: 80vh;
-    max-width: 80%;
-    height: 30vh;
+    max-width: 95%;
+    height: 300px;
     object-fit: cover;
     border-radius: 0.2em;
     box-shadow: none;
@@ -426,10 +426,20 @@ section {
     transition: 2s;
     transform: translateY(-450px);
     z-index: 1;
-    padding: auto;
-    padding-left: auto;
+    padding-right: auto;
+    padding-left: 1.5em;
+  }
+  #onderschrift, h5 {
+    margin-top: 10px;
+  }
+  
+  #onderschrift {
+margin-bottom: 40px;
+margin-top: -30px;
+
   }
 }
+
 
 /*--------------------Tablet view--------------------*/
 @media screen and (max-width: 1024px) {
