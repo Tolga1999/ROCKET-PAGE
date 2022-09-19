@@ -62,11 +62,9 @@ body {
   text-decoration: none;
 }
 
-
 #gallery:hover {
-
-transition: 1.5s;
-top: 0;
+  transition: 1.5s;
+  top: 0;
 }
 
 .galleryButton {
@@ -251,8 +249,8 @@ section {
   margin-top: -0.5vh;
   font-size: 0.7em;
 }
-
-.knop {
+a.knop {
+  font-family: sans-serif;
   text-decoration: none;
   color: white;
   background: none;
@@ -264,7 +262,6 @@ section {
   cursor: pointer;
   transition: 0.01ms;
   transition-delay: 0s;
- 
 }
 
 .knop:hover {
@@ -440,20 +437,19 @@ section {
     padding-right: auto;
     padding-left: 1.5em;
   }
-  #onderschrift, h5 {
+  #onderschrift,
+  h5 {
     margin-top: 10px;
   }
-  
-  #onderschrift {
-margin-bottom: 40px;
-margin-top: -30px;
 
+  #onderschrift {
+    margin-bottom: 40px;
+    margin-top: -30px;
   }
   .galleryButton {
     position: fixed;
   }
 }
-
 
 /*--------------------Tablet view--------------------*/
 @media screen and (max-width: 1024px) {
