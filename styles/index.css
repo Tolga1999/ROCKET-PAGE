@@ -59,11 +59,23 @@ margin-right: 10px;
   position: absolute;
   top: 0;
   right: 0;
-  background-color: purple;
-  width: 20vw;
-  height: 5vh;
-  z-index: 2;
+  margin: 20px;
+  color: white;
+  background: none;
+  border: none;
+  font-size: 0.6em;
+  background-color: rgba(81, 168, 225, 1);
+  padding: 10px 20px 10px 20px;
+  border-radius: 0.5em;
   cursor: pointer;
+  transition: 0.01ms;
+  transition-delay: 0s;
+  z-index: 2;
+}
+
+.galleryButton:hover{
+  background-color: rgb(70, 99, 166);
+  transition: 0.1s;
 }
 
 .kaartje {
@@ -244,9 +256,8 @@ section {
 }
 
 .knop:hover {
-  background-color: rgba(223, 195, 76, 1);
+  background-color: rgb(70, 99, 166);
   transition: 0.1s;
-
 }
 
 .card {
