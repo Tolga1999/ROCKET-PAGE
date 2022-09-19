@@ -53,8 +53,7 @@ body {
   overflow: hidden;
   z-index: 20;
   transition: 2s;
-  /* transform: translateY(-190vh); */
-  z-index: 1;
+  transform: translateY(-190vh);
 }
 
 /* #gallery: {
@@ -374,6 +373,10 @@ section {
     width: 12%;
     margin-left: 1em;
   }
+  .raket {
+    width: 20%;
+    margin-left: 5%;
+  }
 
   .overlay::before {
     content: "";
@@ -403,6 +406,28 @@ section {
 
   .first_text_scroll {
     display: none;
+  }
+
+  #gallery img {
+    width: 80vh;
+    max-width: 80%;
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 0.2em;
+    box-shadow: none;
+    cursor: pointer;
+    transition: 0.5s all ease;
+  }
+  #gallery {
+    max-width: 100vw;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.898);
+    overflow: hidden;
+    transition: 2s;
+    transform: translateY(-450px);
+    z-index: 1;
+    padding: auto;
+    padding-left: auto;
   }
 }
 

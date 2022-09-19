@@ -24,8 +24,9 @@ section:nth-child(1) {
 section:nth-child(2) {
   background-image: url("../assets/thomas.png");
 }
+
 section:nth-child(3) {
-  background-image: url("../assets/Tolga.png");
+  background-image: url("../assets/Tolga2.png");
 }
 
 section:nth-child(4) {
@@ -37,7 +38,7 @@ section:nth-child(5) {
 }
 
 section:nth-child(6) {
-  background-image: url("../assets/Joelle.png");
+  background-image: url("../assets/Joëlle.png");
 }
 
 section:nth-child(7) {
@@ -77,23 +78,23 @@ section:nth-child(15) {
 }
 
 section:nth-child(16) {
-  background-image: url("https://picsum.photos/1000/1000");
+  background-image: url("../assets/Badr.png");
 }
 
 section:nth-child(17) {
-  background-image: url("https://picsum.photos/1000/1000");
+  background-image: url("../assets/Cathelijne.png");
 }
 
 section:nth-child(18) {
-  background-image: url("https://picsum.photos/1000/1000");
+  background-image: url("../assets/Anouk.png");
 }
 
 section:nth-child(19) {
-  background-image: url("https://picsum.photos/1000/1000");
+  background-image: url("../assets/Judith.png");
 }
 
 section:nth-child(20) {
-  background-image: url("https://picsum.photos/1000/1000");
+  background-image: url("../assets/Diego.png");
 }
 
 section:nth-child(21) {
@@ -101,17 +102,5 @@ section:nth-child(21) {
 }
 
 section:nth-child(22) {
-  background-image: url("https://picsum.photos/1000/1000");
-}
-
-section:nth-child(23) {
-  background-image: url("https://picsum.photos/1000/1000");
-}
-
-section:nth-child(24) {
-  background-image: url("https://picsum.photos/1000/1000");
-}
-
-section:nth-child(25) {
   background-image: url("https://picsum.photos/1000/1000");
 }
