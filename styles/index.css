@@ -76,6 +76,7 @@ transition: 1.5s;
   transition: 0.01ms;
   transition-delay: 0s;
   z-index: 2;
+  overflow: hidden;
 }
 
 .galleryButton:hover{
