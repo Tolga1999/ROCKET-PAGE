@@ -34,9 +34,7 @@ margin-right: 10px;
 
 /* OVERVIEW MENU */
 #gallery {
-  position: absolute;
-  left: 0;
-  top: 0;
+
   display: none;
   flex-direction: row;
   flex-wrap: wrap;
@@ -47,13 +45,20 @@ margin-right: 10px;
   margin: auto;
   padding: 20vh 4vw;
   padding-left: 10vw;
-  background-color: rgb(31, 30, 30);
+  background-color: rgba(0, 0, 0, 0.898);
   overflow: hidden;
   z-index: 20;
   transition: 2s;
   /* transform: translateY(-190vh); */
   z-index: 1;
 }
+
+/* #gallery: {
+transform: translatey(-190vh);
+transition: 1.5s;
+
+} */
+ 
 
 .galleryButton{
   position: absolute;
