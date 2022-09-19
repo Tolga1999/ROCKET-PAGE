@@ -1,7 +1,7 @@
 Dit is een opdracht van de opleiding FDND in Amsterdam. We hebben een overzicht gemaakt voor een aantal visitekaartjes.
 _________________________________________________________________________________________________
 
-:computer: De live versie is te vinden op: https://github.io/
+:computer: De live versie is te vinden op: http://teamrocket.student.fdnd.nl/
 
 :page_with_curl: Dit project is gemaakt met de volgende talen:
 
