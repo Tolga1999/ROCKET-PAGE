@@ -22,7 +22,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: white;
 }
 
@@ -137,13 +137,12 @@ background-color: transparent;
   transition: 1s;
   cursor: pointer;
   display: block;
-
 }
 
 .raket:hover {
   transform: translate(-80px, -80px);
-  transition: ease-in 0.7s;
-
+  transition: ease-in;
+  transition: 1s;
 }
 
 /*Cards*/
@@ -153,8 +152,8 @@ background-color: transparent;
   width: 100vh;
   transform: rotate(-90deg) translateX(-100vh);
   transform-origin: top left;
-  overflow-x: scroll; /* scrolls from left to right instead of up to down */
-  scroll-snap-type: y mandatory; /* we use y mandatory cause of the transform above*/
+  overflow-x: scroll;
+  scroll-snap-type: y mandatory;
 }
 
 .all {
@@ -197,7 +196,6 @@ section {
   padding-right: 0.3vw;
   display: block;
   width: 20vw;
-
 }
 
 /* ANIMEREN */
@@ -220,7 +218,7 @@ section {
 }
 
 .content_container .knop {
-  transition-delay: .3s;
+  transition-delay: 0.3s;
 }
 
 .card:hover .content_container h2,
@@ -232,7 +230,6 @@ section {
 
 .name_title {
   margin: 0;
-
 }
 
 .subtext {
@@ -252,7 +249,6 @@ section {
   cursor: pointer;
   transition: 0.01ms;
   transition-delay: 0s;
-
 }
 
 .knop:hover {
@@ -263,7 +259,6 @@ section {
 .card {
   height: 100vh;
   width: 33.33vw;
-  /* CHECK DEZE CODE */
 }
 
 .overlay::before {
@@ -272,8 +267,12 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  content: '';
-  background: linear-gradient(212deg, rgba(0, 0, 0, 0) 0%, rgba(0, 8, 71, 0.5) 100%);
+  content: "";
+  background: linear-gradient(
+    212deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 8, 71, 0.5) 100%
+  );
   opacity: 0%;
   transition: 0.5s;
   mix-blend-mode: multiply;
@@ -295,14 +294,20 @@ section {
 
 .pulse {
   animation: pulsate 1.5s ease-out;
-  animation-iteration-count: infinite; 
+  animation-iteration-count: infinite;
   opacity: 0.3;
 }
 
 @keyframes pulsate {
-  0% { opacity: 0; }
-  50% { opacity: 1.0; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .first_text_swipe{
@@ -352,18 +357,20 @@ section {
 
   p {
     padding-right: 3em;
-
   }
 
   .logo {
     width: 12%;
     margin-left: 1em;
-
   }
 
   .overlay::before {
-    content: '';
-    background: linear-gradient(212deg, rgba(0, 0, 0, 0) 0%, rgba(0, 8, 71, 0.5) 100%);
+    content: "";
+    background: linear-gradient(
+      212deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 8, 71, 0.5) 100%
+    );
     opacity: 100%;
     mix-blend-mode: multiply;
   }
@@ -383,21 +390,12 @@ section {
     padding-right: 0.3vw;
     display: block;
     width: 80vw;
-    }
-
-    .first_text_swipe{
-      display: inline;
-    }
-
-    .first_text_scroll{
-      display: none;
-    }
-    
+  }
 }
 
 /*--------------------Tablet view--------------------*/
-@media screen and (max-width: 1024px) /* and (pointer: none) */{
-  .frontpage{
+@media screen and (max-width: 1024px) {
+  .frontpage {
     width: 50vw;
   }
 
@@ -409,25 +407,12 @@ section {
     width: 20vw;
   }
 
-  .content_container{
-    font-size: 1.75em;
-  }
-
-  .first_subtext {
-    margin-top: 12.5vh;
-  }
-
-  .subtext{
-    width: 40vw;
-  }
-
   /* ANIMEREN UITZETTEN*/
   .overlay::before {
-    content: '';
-    opacity: 100%;
-
+    content: "";
+    opacity: 0; /* opacity op 0% gezet OOK bij hover van overlay */
   }
-/* opacity: bij allebei weer aangezet anders kon je de tekst niet lezen op sommige afbeeldingen; */
+
   .content_container h2,
   .content_container p,
   .content_container .knop {
@@ -447,12 +432,4 @@ section {
     background-color: rgba(81, 168, 225, 1);
   }
 
-  .first_text_swipe{
-    display: inline;
-  }
-
-  .first_text_scroll{
-    display: none;
-  }
-  
-}
+/* VOEG NOG EEN GRADIANT BACKGROUND TOE AAN TABLET FORMAAT!!! */
