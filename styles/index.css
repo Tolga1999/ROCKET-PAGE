@@ -58,24 +58,16 @@ body {
   /* transform: translateY(-62%); */
 }
 
-<<<<<<< Updated upstream
 .gallery_link {
   color: white;
   text-decoration: none;
 }
 
-.gallery_link:hover {
-  text-decoration: underline;
-}
 
-/* #gallery: {
-transform: translatey(-190vh);
-=======
 #gallery:hover {
-top: 0;
->>>>>>> Stashed changes
-transition: 1.5s;
 
+transition: 1.5s;
+top: 0;
 }
 
 .galleryButton {
@@ -93,7 +85,7 @@ transition: 1.5s;
   cursor: pointer;
   transition: 0.01ms;
   transition-delay: 0s;
-  z-index: 2;
+  z-index: 50;
   overflow: hidden;
 }
 
@@ -142,7 +134,7 @@ background-color: transparent;
 
 .logo {
   position: absolute;
-  z-index: 9;
+  z-index: 40;
   width: 10%;
   margin-top: 2vh;
   margin-left: 2vw;
@@ -151,7 +143,7 @@ background-color: transparent;
 
 .raket {
   position: absolute;
-  z-index: 10;
+  z-index: 40;
   width: 10%;
   margin-top: 2vh;
   margin-left: 2vw;
@@ -272,6 +264,7 @@ section {
   cursor: pointer;
   transition: 0.01ms;
   transition-delay: 0s;
+ 
 }
 
 .knop:hover {
