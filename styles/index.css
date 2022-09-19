@@ -1,6 +1,10 @@
 /* FONTS */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap");
 
+*{
+  scroll-behavior: smooth;
+}
+
 /*Laat de scrolbar niet zien*/
 ::-webkit-scrollbar {
   width: 0px;
@@ -12,7 +16,7 @@
   height: 0px;
 }
 
-.wrap {
+.wrap { 
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.612);
   display: flex;
@@ -27,9 +31,9 @@ body {
 }
 
 .menu {
-cursor: pointer;
-margin-left: auto;
-margin-right: 10px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: 10px;
 }
 
 /* OVERVIEW MENU */
@@ -58,9 +62,9 @@ transform: translatey(-190vh);
 transition: 1.5s;
 
 } */
- 
 
-.galleryButton{
+
+.galleryButton {
   position: absolute;
   top: 0;
   right: 0;
@@ -79,22 +83,22 @@ transition: 1.5s;
   overflow: hidden;
 }
 
-.galleryButton:hover{
+.galleryButton:hover {
   background-color: rgb(70, 99, 166);
   transition: 0.1s;
 }
 
 .kaartje {
-display: flex;
-flex-direction: column ;
-margin-bottom: 3%;
-box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 
 }
 
 #onderschrift {
-font-size: .7em;
-margin-top: -30px;
+  font-size: .7em;
+  margin-top: -30px;
 
 }
 
@@ -177,8 +181,11 @@ section {
   width: 33.3vw;
   transition: 0.5s;
   position: relative;
-  scroll-snap-align: start; /*scroll snap*/
-} /* CHECK DEZE CODE */
+  scroll-snap-align: start;
+  /*scroll snap*/
+}
+
+/* CHECK DEZE CODE */
 
 /*Content at the bottem of the cards*/
 .content_container {
@@ -274,11 +281,9 @@ section {
   width: 100%;
   height: 100%;
   content: "";
-  background: linear-gradient(
-    212deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 8, 71, 0.5) 100%
-  );
+  background: linear-gradient(212deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 8, 71, 0.5) 100%);
   opacity: 0%;
   transition: 0.5s;
   mix-blend-mode: multiply;
@@ -288,7 +293,8 @@ section {
   opacity: 100%;
 }
 
-.first_text_swipe, .first_text_scroll {
+.first_text_swipe,
+.first_text_scroll {
   font-size: 3em;
 }
 
@@ -308,24 +314,33 @@ section {
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
 }
 
-.first_text_swipe{
+.first_text_swipe {
   display: none;
 }
 
-.first_text_scroll{
+.first_text_scroll {
   display: inline;
 }
 
 /*--------------------Mobiel view--------------------*/
+<<<<<<< Updated upstream
 @media screen and (max-width: 480px) and (pointer: none) {
+=======
+@media screen and (max-width: 480px)
+
+/* and (pointer: none) */
+  {
+>>>>>>> Stashed changes
   .outer-wrapper {
     margin-top: -2px;
     width: 100vh;
@@ -372,11 +387,9 @@ section {
 
   .overlay::before {
     content: "";
-    background: linear-gradient(
-      212deg,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 8, 71, 0.5) 100%
-    );
+    background: linear-gradient(212deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 8, 71, 0.5) 100%);
     opacity: 100%;
     mix-blend-mode: multiply;
   }
@@ -424,7 +437,8 @@ section {
   /* ANIMEREN UITZETTEN*/
   .overlay::before {
     content: "";
-    opacity: 0; /* opacity op 0% gezet OOK bij hover van overlay */
+    opacity: 0;
+    /* opacity op 0% gezet OOK bij hover van overlay */
   }
 
   .content_container h2,
@@ -436,7 +450,7 @@ section {
 
   .card:hover .overlay::before {
     opacity: 1;
-   
+
   }
 
   /* ---------------- */
@@ -454,5 +468,9 @@ section {
     background-color: rgba(81, 168, 225, 1);
   }
 
+<<<<<<< Updated upstream
 /* VOEG NOG EEN GRADIANT BACKGROUND TOE AAN TABLET FORMAAT!!! */
 }
+=======
+  /* VOEG NOG EEN GRADIANT BACKGROUND TOE AAN TABLET FORMAAT!!! */
+>>>>>>> Stashed changes
