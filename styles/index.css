@@ -41,7 +41,6 @@ body {
 #gallery {
   position: absolute;
   top: 80%;
-  display: none;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
