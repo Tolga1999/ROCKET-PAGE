@@ -56,6 +56,11 @@ body {
   transform: translateY(-190vh);
 }
 
+.gallery_link {
+  color: white;
+  text-decoration: none;
+}
+
 /* #gallery: {
 transform: translatey(-190vh);
 transition: 1.5s;
