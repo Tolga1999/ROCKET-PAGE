@@ -333,7 +333,7 @@ section {
 }
 
 /*--------------------Mobiel view--------------------*/
-@media (max-width: 480px), screen and (pointer: none) {
+@media screen and (pointer: none) and (max-width: 480px) {
   .outer-wrapper {
     margin-top: -2px;
     width: 100vh;
@@ -411,7 +411,7 @@ section {
 }
 
 /*--------------------Tablet view--------------------*/
-@media (max-width: 1024px), screen and (pointer: none) {
+@media screen and (pointer: none) and (max-width: 1024px) {
   .frontpage {
     width: 50vw;
   }
