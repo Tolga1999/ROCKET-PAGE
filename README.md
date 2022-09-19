@@ -9,7 +9,7 @@ ________________________________________________________________________________
 > :triangular_flag_on_post: CSS<br>
 > :triangular_flag_on_post: JavaScript<br>
 
-![image](https://user-images.githubusercontent.com/60781257/190587541-21f9f0eb-9199-4479-870b-e2c02195fdbf.png)
+![image](https://user-images.githubusercontent.com/60781257/191000705-25be0c8c-7cc0-4469-bef7-6955136c8203.png)
 
 ```
 Door Thomas. S
