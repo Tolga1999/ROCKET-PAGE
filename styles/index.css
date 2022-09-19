@@ -39,6 +39,8 @@ body {
 
 /* OVERVIEW MENU */
 #gallery {
+  position: absolute;
+  top: 80%;
   display: none;
   flex-direction: row;
   flex-wrap: wrap;
@@ -53,9 +55,10 @@ body {
   overflow: hidden;
   z-index: 20;
   transition: 2s;
-  transform: translateY(-190vh);
+  /* transform: translateY(-62%); */
 }
 
+<<<<<<< Updated upstream
 .gallery_link {
   color: white;
   text-decoration: none;
@@ -63,9 +66,13 @@ body {
 
 /* #gallery: {
 transform: translatey(-190vh);
+=======
+#gallery:hover {
+top: 0;
+>>>>>>> Stashed changes
 transition: 1.5s;
 
-} */
+}
 
 .galleryButton {
   position: absolute;
