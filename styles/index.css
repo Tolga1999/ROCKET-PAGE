@@ -324,7 +324,7 @@ section {
 }
 
 /*--------------------Mobiel view--------------------*/
-@media screen and (max-width: 480px) /* and (pointer: none) */{
+@media screen and (max-width: 480px) and (pointer: none) {
   .outer-wrapper {
     margin-top: -2px;
     width: 100vh;
@@ -396,10 +396,18 @@ section {
     display: block;
     width: 80vw;
   }
+
+  .first_text_swipe{
+    display: inline;
+  }
+  
+  .first_text_scroll{
+    display: none;
+  }
 }
 
 /*--------------------Tablet view--------------------*/
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (pointer: none) {
   .frontpage {
     width: 50vw;
   }
@@ -432,9 +440,18 @@ section {
 
   /* ---------------- */
 
+  .first_text_swipe{
+    display: inline;
+  }
+  
+  .first_text_scroll{
+    display: none;
+  }
+
   /* hover hiden door zelfde background color */
   .knop:hover {
     background-color: rgba(81, 168, 225, 1);
   }
 
 /* VOEG NOG EEN GRADIANT BACKGROUND TOE AAN TABLET FORMAAT!!! */
+}
