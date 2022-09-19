@@ -9,33 +9,29 @@
     <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/image.css" />
     <link rel="icon" type="image/png" href="assets/fav.png" />
+    <script src="scripts/index.js" async></script> <!-- async doesn't potentially block DOM -->
 
 </head>
 
 <body>
-    <header>
+  
+    <header class=""> <!-- ADD A CLASS --> 
         <img class="logo" src="assets/rocket_tekst-01.png" alt="Team Rocket" />
         <img class="raket" src="assets/rocket_icon-01.png" alt="Raket" />
+    
     </header>
+    <button class="galleryButton" onclick="menuFunction()">GALLERIJ</button>
+    
     <div class="outer-wrapper">
-        <div class="all x mandatory-scroll-snapping" id="container">
-
-            <section class="frontpage">
+        <div class="all">
+            <section class="frontpage" id="first">
                     <div class="front">
-                        <h2 class="first_text name_title pulse">
-                            <script>
-                                var viewportWidth = window.innerWidth || document.documentElement.clientWidth; //Zet de breete in pixels van de viewport
-                                if(viewportWidth > 1024){ 
-                                    document.write("Scroll"); //Desktop
-                                }else{
-                                    document.write("Swipe"); //Tablet of mobiel
-                                }
-                            </script>
-                        </h2>
+                        <h2 class="first_text_scroll name_title pulse">Scroll</h2>
+                        <h2 class="first_text_swipe name_title pulse">Swipe</h2>
                         <p class="first_subtext mainschrift">Hello world, dit is de A squad page. Deze pagina kun je bekijken door te scrollen of te swipen. </p>
                     </div>
             </section>
-            
+
             <section class="card background_format">
                 <div class="overlay">
                     <div class="content_container">
@@ -272,9 +268,152 @@
             </section>
         </div>
     </div>
+    
+    <div id="gallery">
+        <div class="kaartje">
+            <img src="assets/Milan.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
+        <div class="kaartje">
+            <img src="assets/thomas.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
+        <div class="kaartje">
+            <img src="assets/Tolga2.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
+        <div class="kaartje">
+            <img src="assets/Sander.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
+        <div class="kaartje">
+            <img src="assets/Sanne.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
+        <div class="kaartje">
+            <img src="assets/Wesley.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
+        <div class="kaartje">
+            <img src="assets/Tim.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
+        <div class="kaartje">
+            <img src="assets/Joelle.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
+        <div class="kaartje">
+            <img src="assets/Joelle.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
+        <div class="kaartje">
+            <img src="assets/Joelle.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
+        <div class="kaartje">
+            <img src="assets/Joelle.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
+        <div class="kaartje">
+            <img src="assets/Joelle.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
+        <div class="kaartje">
+            <img src="assets/Joelle.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
+        <div class="kaartje">
+            <img src="assets/Joelle.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
+        <div class="kaartje">
+            <img src="assets/Joelle.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
+        <div class="kaartje">
+            <img src="assets/Joelle.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
+        <div class="kaartje">
+            <img src="assets/Joelle.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
+        <div class="kaartje">
+            <img src="assets/Joelle.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
+        <div class="kaartje">
+            <img src="assets/Joelle.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
+        <div class="kaartje">
+            <img src="assets/Joelle.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
+        <div class="kaartje">
+            <img src="assets/Joelle.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
+        <div class="kaartje">
+            <img src="assets/Joelle.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
+        <div class="kaartje">
+            <img src="assets/Joelle.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
+        <div class="kaartje">
+            <img src="assets/Joelle.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
+        <div class="kaartje">
+            <img src="assets/Joelle.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
+        <div class="kaartje">
+            <img src="assets/Joelle.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
+        <div class="kaartje">
+            <img src="assets/Joelle.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
+        <div class="kaartje">
+            <img src="assets/Joelle.png" alt="milan">
+            <H5>Milan Rolie</H5>
+            <p id="onderschrift">Squad a</p>
+        </div>
 
 
-    <h1>hfhfh</h1>
+    </div>
+
 </body>
 
 </html>
