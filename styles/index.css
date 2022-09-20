@@ -54,7 +54,7 @@ body {
   background-color: rgba(0, 0, 0, 0.898);
   overflow: hidden;
   z-index: 20;
-  transition: top 1s ease;
+  transition: 0.7s ease;
 }
 
 /* galleryTop gets added to class gallery to make the animation */

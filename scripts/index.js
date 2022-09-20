@@ -13,3 +13,10 @@ function menuFunction() {
         galleryOpenButton.style.display = "inline"
     }
 }
+
+// HIER WORDT NOG AAN GEWERKT!!!
+function fotoFunction(){
+    fotoPersoon = document.querySelector('.gallery')
+    fotoPersoon.classList.remove('galleryTop')
+    galleryOpenButton.style.display = "inline"
+}
