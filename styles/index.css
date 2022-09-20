@@ -164,6 +164,7 @@ background-color: transparent;
   transform-origin: top left;
   overflow-x: scroll;
   scroll-snap-type: y mandatory;
+  overscroll-behavior: contain;
 }
 
 .all {
@@ -182,6 +183,10 @@ section {
   position: relative;
   scroll-snap-align: start;
   /*scroll snap*/
+}
+
+.last_scroll {
+  overscroll-behavior-x: none;
 }
 
 /* CHECK DEZE CODE */
