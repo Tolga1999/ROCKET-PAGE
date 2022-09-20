@@ -14,14 +14,12 @@
 </head>
 
 <body>
-
     <header class="">
       <a href="#first"> <div class="logoblock">
             <img class="logo" src="assets/rocket_tekst-01.png" alt="Team Rocket" />
             <img class="raket" src="assets/rocket_icon-01.png" alt="Raket" />
         </div></a> 
     </header>
-    <button class="galleryButton" onclick="menuFunction()">GALLERIJ</button>
     <div class="outer-wrapper">
         <div class="all">
             <section class="frontpage" id="first">
@@ -215,8 +213,10 @@
             </section>
         </div>
     </div>
+    <button id="galleryOpenButton" onclick="menuFunction()"><img src="/assets/arrowUp.png"></button>
 
-    <div id="gallery" style="display: none;">
+    <div class="gallery">
+        <button class="galleryCloseButton" onclick="menuFunction()">GALLERIJ</button>
         <a class="gallery_link" href="#1">
             <div class="kaartje">
                 <img src="assets/thomas.png" alt="Thomas">
