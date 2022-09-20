@@ -181,6 +181,7 @@ background-color: transparent;
 
 /*Cards*/
 .outer-wrapper {
+  position: fixed; /* fixed for the gallery */
   margin-top: -2px;
   height: 100vw;
   width: 100vh;
