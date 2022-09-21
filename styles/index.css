@@ -41,7 +41,7 @@ body {
 .gallery {
   display: flex;
   position: absolute;
-  top:100%; /* default value given or else it doesn't know how to animate*/
+  top: 100%; /* default value given or else it doesn't know how to animate*/
   width: 86%;
   flex-direction: row;
   flex-wrap: wrap;
@@ -69,7 +69,8 @@ body {
   text-decoration: none;
 }
 
-.galleryCloseButton {
+#galleryCloseButton {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -82,13 +83,11 @@ body {
   padding: 10px 20px 10px 20px;
   border-radius: 0.5em;
   cursor: pointer;
-  transition: 0.01ms;
-  transition-delay: 0s;
   z-index: 50;
   overflow: hidden;
 }
 
-.galleryCloseButton:hover {
+#galleryCloseButton:hover {
   background-color: rgba(70, 99, 166, 1);
   transition: 0.3s;
 }
@@ -488,7 +487,7 @@ a.knop {
     margin-bottom: 40px;
     margin-top: -30px;
   }
-  .galleryCloseButton {
+  #galleryCloseButton {
     position: fixed;
   }
   .gallery_link {
