@@ -102,6 +102,7 @@ body {
 
 #galleryOpenButton{
   background-color: rgb(63, 195, 129);
+  padding-bottom: 1em;
   font-size: 2em;
   position: absolute;
   left: 46%;
