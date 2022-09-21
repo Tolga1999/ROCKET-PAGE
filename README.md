@@ -1,4 +1,4 @@
-INHOUD
+:rocket: INHOUD VAN DIT BESTAND :rocket:
 
  * Introductie
  * Live versie
@@ -14,7 +14,6 @@ ________________________________________________________________________________
 :computer: De live versie is te vinden op: http://teamrocket.student.fdnd.nl/
 _________________________________________________________________________________________________
 
-
 :page_with_curl: Dit project is gemaakt met de volgende talen:
 
 > :triangular_flag_on_post: HTML<br>
@@ -23,7 +22,6 @@ ________________________________________________________________________________
 _________________________________________________________________________________________________
 
 :arrow_down: Installatie: Je kan de bestandsmap downloaden of het project clonen; je hoeft verder niks te installeren. Om de website lokaal te bekijken kan je het index.html bestand openen.
-
 
 ```
 Door Team Rocket (Tolga, Tim, Judith, Diego, Milan en Thomas)
