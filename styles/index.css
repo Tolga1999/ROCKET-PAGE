@@ -75,15 +75,13 @@ body {
 #galleryCloseButton {
   display: none;
   position: absolute;
-  font-size: 2em !important;
   top: 0;
   right: 0;
   margin: 20px;
   color: white;
   background: none;
   border: none;
-  font-size: 0.6em;
-  /* background-color: rgba(81, 168, 225, 1); */
+  font-size: 2em;
   padding: 10px 20px 10px 20px;
   border-radius: 0.5em;
   cursor: pointer;
@@ -94,8 +92,12 @@ body {
   transition: 0.3s;
 }
 
+
+
+
 #galleryCloseButton:hover {
   color: #66e5bf;
+  font-size: 2.1em;
 }
 
 #galleryOpenButton{
