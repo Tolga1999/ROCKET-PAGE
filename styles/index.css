@@ -71,6 +71,7 @@ body {
 }
 
 #galleryCloseButton {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -87,11 +88,11 @@ body {
   transition-delay: 0s;
   z-index: 50;
   overflow: hidden;
+  transition: 0.3s;
 }
 
 #galleryCloseButton:hover {
   background-color: rgba(70, 99, 166, 1);
-  transition: 0.3s;
 }
 
 #galleryOpenButton{
