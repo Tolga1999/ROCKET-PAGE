@@ -21,5 +21,5 @@ function fotoFunction(){
     fotoPersoon = document.querySelector('.gallery')
     fotoPersoon.classList.remove('galleryTop')
     galleryOpenButton.style.display = "inline"
-    galleryCloseButton.style.display = "none"
+    
 }
