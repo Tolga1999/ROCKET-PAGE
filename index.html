@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/image.css" />
     <link rel="icon" type="image/png" href="assets/fav.png" />
     <script src="scripts/index.js" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- async doesn't potentially block DOM -->
 </head>
 
@@ -49,7 +50,7 @@
                     </div>
                 </div>
             </section>
-            <section id="#3" class="card background_format">
+            <section id="3" class="card background_format">
                 <div class="overlay">
                     <div class="content_container">
                         <h2 class="name_title">Milan</h2>
@@ -216,7 +217,7 @@
     <button id="galleryOpenButton" onclick="menuFunction()"><img class="arrowup" src="assets/arrowUp.png"></button>
 
     <div class="gallery">
-        <button id="galleryCloseButton" onclick="menuFunction()">GALLERIJ</button>
+        <button id="galleryCloseButton" onclick="menuFunction()">    <i class="fa fa-close"></i></button>
         <a class="gallery_link" href="#1" onclick="fotoFunction()">
             <div class="kaartje">
                 <img src="assets/thomas.png" alt="Thomas">
@@ -351,7 +352,7 @@
                 <p id="onderschrift">Squad a</p>
             </div>
         </a>
-        <a class="gallery_link" href="#20" onclick="fotoFunction()">
+        <a class="gallery_link end_card" href="#20" onclick="fotoFunction()">
             <div class="kaartje">
                 <img src="assets/Danique.png" alt="Danique">
                 <H5>Fatima</H5>

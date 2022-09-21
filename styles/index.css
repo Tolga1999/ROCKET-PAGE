@@ -58,6 +58,7 @@ body {
   overflow: scroll;
   z-index: 20;
   transition: 0.7s ease;
+
 }
 
 /* galleryTop gets added to class gallery to make the animation */
@@ -74,6 +75,7 @@ body {
 #galleryCloseButton {
   display: none;
   position: absolute;
+  font-size: 2em !important;
   top: 0;
   right: 0;
   margin: 20px;
@@ -81,7 +83,7 @@ body {
   background: none;
   border: none;
   font-size: 0.6em;
-  background-color: rgba(81, 168, 225, 1);
+  /* background-color: rgba(81, 168, 225, 1); */
   padding: 10px 20px 10px 20px;
   border-radius: 0.5em;
   cursor: pointer;
@@ -93,7 +95,7 @@ body {
 }
 
 #galleryCloseButton:hover {
-  background-color: rgba(70, 99, 166, 1);
+  color: #66e5bf;
 }
 
 #galleryOpenButton{
@@ -111,6 +113,10 @@ body {
   border: none;
   cursor: pointer;
 }
+.end_card {
+margin-bottom: 30vh;
+}
+
 .arrowup{
   transform: translatey(3px);
 }
