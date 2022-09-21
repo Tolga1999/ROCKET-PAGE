@@ -39,8 +39,9 @@ body {
 
 /* OVERVIEW MENU */
 .gallery {
+  display: flex;
   position: absolute;
-  top: 100%; /* default value given or else it doesn't know how to animate*/
+  top:100%; /* default value given or else it doesn't know how to animate*/
   width: 86%;
   flex-direction: row;
   flex-wrap: wrap;
@@ -69,7 +70,7 @@ body {
 }
 
 .galleryCloseButton {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   margin: 20px;
@@ -93,21 +94,31 @@ body {
 }
 
 #galleryOpenButton{
-  background-color: rgba(81, 168, 225, 1);
+  background-color: rgb(63, 195, 129);
   font-size: 2em;
   position: absolute;
-  left: 50vw;
+  left: 70vw;
   right: 50vw;
-  top: 92vh;
-  width: 3vw;
+  bottom: 0;
+  width: 8vw;
   height: 6vh;
-  border-radius: 2em;
+  border-radius: .5em .5em 0em 0em;
   transition: 0.3s;
   border: none;
+  cursor: pointer;
+}
+.arrowup{
+  transform: translatey(3px);
+}
+
+.arrowup:hover {
+  transform: translateY(-3px);
+  transition: 0.2s;
 }
 
 #galleryOpenButton:hover{
   background-color: rgba(70, 99, 166, 1);
+  
 }
 
 #galleryOpenButton img{
@@ -118,6 +129,7 @@ body {
 .kaartje {
   display: flex;
   flex-direction: column;
+  max-width: 1000px;
   margin-bottom: 3%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
