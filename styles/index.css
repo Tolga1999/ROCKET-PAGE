@@ -22,6 +22,7 @@
   display: flex;
 }
 
+
 body {
   margin: 0;
   padding: 0;
@@ -41,7 +42,7 @@ body {
 .gallery {
   display: flex;
   position: absolute;
-  top: 100%; /* default value given or else it doesn't know how to animate*/
+  top:100%; /* default value given or else it doesn't know how to animate*/
   width: 86%;
   flex-direction: row;
   flex-wrap: wrap;
@@ -70,7 +71,6 @@ body {
 }
 
 #galleryCloseButton {
-  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -83,6 +83,8 @@ body {
   padding: 10px 20px 10px 20px;
   border-radius: 0.5em;
   cursor: pointer;
+  transition: 0.01ms;
+  transition-delay: 0s;
   z-index: 50;
   overflow: hidden;
 }
@@ -96,7 +98,7 @@ body {
   background-color: rgb(63, 195, 129);
   font-size: 2em;
   position: absolute;
-  left: 70vw;
+  left: 46%;
   right: 50vw;
   bottom: 0;
   width: 8vw;
@@ -290,6 +292,7 @@ section {
   margin-top: -0.5vh;
   font-size: 0.7em;
 }
+
 a.knop {
   font-family: sans-serif;
   text-decoration: none;
@@ -467,6 +470,7 @@ a.knop {
     cursor: pointer;
     transition: 0.5s all ease;
   }
+
   .gallery {
     max-width: 100vw;
     margin: auto;
@@ -487,7 +491,7 @@ a.knop {
     margin-bottom: 40px;
     margin-top: -30px;
   }
-  #galleryCloseButton {
+  .galleryCloseButton {
     position: fixed;
   }
   .gallery_link {
