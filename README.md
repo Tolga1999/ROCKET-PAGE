@@ -14,7 +14,7 @@ ________________________________________________________________________________
 > :triangular_flag_on_post: JavaScript<br>
 _________________________________________________________________________________________________
 
-:pager: Installatie: Je kan de bestandsmap downloaden of het project clonen; je hoeft verder niks te installeren. Om de website lokaal te bekijken kan je het index.html bestand openen.
+:arrow_down: Installatie: Je kan de bestandsmap downloaden of het project clonen; je hoeft verder niks te installeren. Om de website lokaal te bekijken kan je het index.html bestand openen.
 
 
 ```
