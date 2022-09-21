@@ -1,8 +1,8 @@
 let openGallery = new Boolean(false);
+gallery = document.querySelector('.gallery')
+galleryOpenButton = document.getElementById('galleryOpenButton')
+galleryCloseButton = document.getElementById('galleryCloseButton')
 function menuFunction() {
-    gallery = document.querySelector('.gallery')
-    galleryOpenButton = document.getElementById('galleryOpenButton')
-    galleryCloseButton = document.getElementById('galleryCloseButton')
     // gives true or false as value
     if(openGallery == false){
         gallery.classList.add('galleryTop')
@@ -22,4 +22,15 @@ function fotoFunction(){
     fotoPersoon.classList.remove('galleryTop')
     galleryOpenButton.style.display = "inline"
     
+}
+
+function fotoFunction(){
+    fotoPersoon = document.querySelector('.gallery')
+    fotoPersoon.classList.remove('galleryTop')
+    galleryOpenButton.style.display = "inline"
+    
+}
+
+function logoFunction(){
+    gallery.classList.remove('galleryTop')
 }
