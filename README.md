@@ -1,4 +1,13 @@
-Dit is een opdracht van de opleiding FDND in Amsterdam. We hebben een overzicht gemaakt voor een aantal visitekaartjes.
+CONTENTS OF THIS FILE
+_________________________________________________________________________________________________
+
+ * Introductie
+ * Live versie
+ * Talen
+ * Installatie
+_________________________________________________________________________________________________
+
+:bookmark_tabs: Introductie: Dit is een opdracht van de opleiding FDND in Amsterdam. We hebben een overzicht gemaakt voor een aantal visitekaartjes.
 
 ![image](https://user-images.githubusercontent.com/60781257/191000705-25be0c8c-7cc0-4469-bef7-6955136c8203.png)
 _________________________________________________________________________________________________
