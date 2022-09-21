@@ -99,7 +99,7 @@ body {
 #galleryOpenButton{
   background-color: rgb(63, 195, 129);
   font-size: 2em;
-  position: relative;
+  position: absolute;
   left: 46%;
   right: 50vw;
   bottom: 0;
