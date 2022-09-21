@@ -41,9 +41,10 @@ body {
 /* OVERVIEW MENU */
 .gallery {
   display: flex;
-  position: absolute;
+  position: fixed;
   top:100%; /* default value given or else it doesn't know how to animate*/
   width: 86%;
+  height: 100vh;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
@@ -54,7 +55,7 @@ body {
   padding: 20vh 4vw;
   padding-left: 10vw;
   background-color: rgba(0, 0, 0, 0.833);
-  overflow: hidden;
+  overflow: scroll;
   z-index: 20;
   transition: 0.7s ease;
 }
@@ -98,7 +99,7 @@ body {
 #galleryOpenButton{
   background-color: rgb(63, 195, 129);
   font-size: 2em;
-  position: absolute;
+  position: relative;
   left: 46%;
   right: 50vw;
   bottom: 0;
