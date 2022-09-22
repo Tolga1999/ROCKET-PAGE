@@ -433,12 +433,12 @@ a.knop {
   .logo {
     position: fixed;
     width: 12%;
-    margin-left: 2em;
+    margin-left: 1em;
   }
   .raket {
     position: fixed;
     width: 20%;
-    margin-left: 2em;
+    margin-left: 1em;
   }
 
   .overlay::before {
@@ -480,15 +480,17 @@ a.knop {
     box-shadow: none;
     cursor: pointer;
     transition: 0.5s all ease;
+    
   }
 
   .gallery {
-    max-width: 102vw;
+    max-width: 110%;
+    left: 0; 
     margin: auto;
     background-color: rgba(0, 0, 0, 0.898);
     transition: 2s;
     z-index: 1;
-    padding-right: auto;
+    padding-right: 1.5em;
     padding-left: 1.5em;
   }
   #onderschrift,
@@ -500,9 +502,7 @@ a.knop {
     margin-bottom: 40px;
     margin-top: -30px;
   }
-  .galleryCloseButton {
-    position: fixed;
-  }
+
   .gallery_link {
     width: 80%;
     color: white;
@@ -510,19 +510,7 @@ a.knop {
   }
 
   #galleryOpenButton{
-    background-color: rgb(63, 195, 129);
-    padding-bottom: 1em;
-    font-size: 2em;
-    position: absolute;
-    left: 46%;
-    right: 50vw;
-    bottom: 0;
-    width: 14vw;
-    height: 6vh;
-    border-radius: .5em .5em 0em 0em;
-    transition: 0.3s;
-    border: none;
-
+  width: 14vw;
   }
 }
 
