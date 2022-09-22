@@ -16,19 +16,10 @@ function menuFunction() {
     }
 }
 
-// HIER WORDT NOG AAN GEWERKT!!!
 function fotoFunction(){
     fotoPersoon = document.querySelector('.gallery')
     fotoPersoon.classList.remove('galleryTop')
     galleryOpenButton.style.display = "inline"
-    
-}
-
-function fotoFunction(){
-    fotoPersoon = document.querySelector('.gallery')
-    fotoPersoon.classList.remove('galleryTop')
-    galleryOpenButton.style.display = "inline"
-    
 }
 
 function logoFunction(){
