@@ -2,6 +2,7 @@ let openGallery = new Boolean(false);
 gallery = document.querySelector('.gallery')
 galleryOpenButton = document.getElementById('galleryOpenButton')
 galleryCloseButton = document.getElementById('galleryCloseButton')
+
 function menuFunction() {
     // gives true or false as value
     if(openGallery == false){
@@ -16,13 +17,14 @@ function menuFunction() {
     }
 }
 
+// functie dat wordt gebruikt bij klik van gallery foto
 function fotoFunction(){
-    fotoPersoon = document.querySelector('.gallery')
-    fotoPersoon.classList.remove('galleryTop')
+    gallery.classList.remove('galleryTop')
     galleryOpenButton.style.display = "inline"
     galleryCloseButton.style.display = "none"
 }
 
+// functie dat wordt gebruikt bij klik van logo
 function logoFunction(){
     gallery.classList.remove('galleryTop')
     galleryCloseButton.style.display = "none"

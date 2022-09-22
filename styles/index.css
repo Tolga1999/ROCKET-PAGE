@@ -5,24 +5,6 @@
   scroll-behavior: smooth;
 }
 
-/*Laat de scrolbar niet zien*/
-::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
-}
-
-::-webkit-scrollbar-button {
-  width: 0px;
-  height: 0px;
-}
-
-.wrap {
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.612);
-  display: flex;
-}
-
-
 body {
   margin: 0;
   padding: 0;
@@ -32,11 +14,16 @@ body {
   height: 100vh;
 }
 
-.menu {
-  cursor: pointer;
-  margin-left: auto;
-  margin-right: 10px;
+/*Laat de scrolbar niet zien*/
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
 }
+
+/* ::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+} */
 
 /* OVERVIEW MENU */
 .gallery {
@@ -58,10 +45,9 @@ body {
   overflow: scroll;
   z-index: 20;
   transition: 0.7s ease;
-
 }
 
-/* galleryTop gets added to class gallery to make the animation */
+/* galleryTop gets added to class gallery to make the animation (when GalleryOpenButton clicked)*/
 .galleryTop{
   top: 0;
 }
@@ -72,6 +58,11 @@ body {
   text-decoration: none;
 }
 
+.end_card {
+  margin-bottom: 30vh;
+}
+
+/* Gallery close button */
 #galleryCloseButton {
   display: none;
   position: fixed;
@@ -85,21 +76,17 @@ body {
   padding: 10px 20px 10px 20px;
   border-radius: 0.5em;
   cursor: pointer;
-  transition: 0.01ms;
-  transition-delay: 0s;
   z-index: 50;
-  overflow: hidden;
   transition: 0.3s;
 }
 
-
-
-
 #galleryCloseButton:hover {
   color: #66e5bf;
-  font-size: 2.1em;
+  transform: scale(1.4);
 }
+/* Gallery close button END */
 
+/* Gallery open button */
 #galleryOpenButton{
   background-color: rgb(63, 195, 129);
   padding-bottom: 1em;
@@ -115,9 +102,6 @@ body {
   border: none;
   cursor: pointer;
 }
-.end_card {
-margin-bottom: 30vh;
-}
 
 .arrowup{
   transform: translatey(3px);
@@ -130,15 +114,16 @@ margin-bottom: 30vh;
 
 #galleryOpenButton:hover{
   background-color: rgba(70, 99, 166, 1);
-  
 }
 
 #galleryOpenButton img{
   width: 0.8em;
   font-size: 1em;
 }
+/* Gallery open button END */
 
-.kaartje {
+/* Gallery kaartje */
+.galleryKaartje {
   display: flex;
   flex-direction: column;
   margin-bottom: 3%;
@@ -168,19 +153,19 @@ h5{
   box-shadow: none;
   cursor: pointer;
   transition: 0.5s all ease;
-
 }
 
 .gallery img:hover {
   -webkit-filter: brightness(0.5);
   filter: brightness(0.5);
 }
-
+/* OVERVIEW MENU END */
 
 :root {
-  font-size: min(calc(1.3em + 0.05vw), 4em);
+  font-size: min(calc(1.3em + 0.05vw), 4em); /* berekening waarin de font size veranderd gebasseert op vw */
 }
 
+/* logo css */
 .logo {
   position: fixed;
   z-index: 40;
@@ -206,14 +191,15 @@ h5{
   transition: ease-in;
   transition: 1s;
 }
+/* logo css END */
 
-/*Cards*/
+/*Main cards*/
 .outer-wrapper {
   position: fixed;
   margin-top: -2px;
   height: 100vw;
   width: 100vh;
-  transform: rotate(-90deg) translateX(-100vh);
+  transform: rotate(-90deg) translateX(-100.25vh); 
   transform-origin: top left;
   overflow-x: scroll;
   scroll-snap-type: y mandatory;
@@ -241,8 +227,6 @@ section {
 .last_scroll {
   overscroll-behavior-x: none;
 }
-
-/* CHECK DEZE CODE */
 
 /*Content at the bottem of the cards*/
 .content_container {
@@ -273,7 +257,6 @@ section {
 .content_container p,
 .content_container .knop {
   transition: 0.3s;
-  /* transition-delay: 0.8s; */
   transition-timing-function: ease;
   transform: translateY(100px);
   opacity: 0;
@@ -297,6 +280,7 @@ section {
   opacity: 1;
   transform: translateY(0);
 }
+/* ANIMEREN END */
 
 .name_title {
   margin: 0;
@@ -328,11 +312,7 @@ a.knop {
   transition: 0.1s;
 }
 
-.card {
-  height: 100vh;
-  width: 33.33vw;
-}
-
+/* before meestal gebruikt om cosmetic content toe te voegen, is inline */
 .overlay::before {
   position: absolute;
   top: 0;
@@ -353,6 +333,16 @@ a.knop {
 .card:hover .overlay::before {
   opacity: 100%;
 }
+/* before END */
+
+/* scroll staat standaard aan (desktop) */
+.first_text_swipe {
+  display: none;
+}
+
+.first_text_scroll {
+  display: inline;
+}
 
 .first_text_swipe,
 .first_text_scroll {
@@ -365,6 +355,7 @@ a.knop {
   font-weight: bold;
 }
 
+/* pulse van frontpage */
 .pulse {
   animation: pulsate 1.5s ease-out;
   animation-iteration-count: infinite;
@@ -384,14 +375,7 @@ a.knop {
     opacity: 0;
   }
 }
-
-.first_text_swipe {
-  display: none;
-}
-
-.first_text_scroll {
-  display: inline;
-}
+/* ------------------- */
 
 /*--------------------Mobiel view--------------------*/
 @media screen and (max-width: 480px) {
@@ -454,7 +438,6 @@ a.knop {
   .content_container p,
   .content_container .knop {
     transition: 0.3s;
-    /* transition-delay: 0.8s; */
     transition-timing-function: ease;
     transform: translateY(0px);
     opacity: 1;
@@ -583,6 +566,4 @@ a.knop {
   .knop:hover {
     background-color: rgba(81, 168, 225, 1);
   }
-
-  /* VOEG NOG EEN GRADIANT BACKGROUND TOE AAN TABLET FORMAAT!!! */
 }
