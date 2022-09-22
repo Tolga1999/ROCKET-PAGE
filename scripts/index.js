@@ -8,6 +8,7 @@ function menuFunction() {
     if(openGallery == false){
         gallery.classList.add('galleryTop')
         openGallery = true
+        galleryOpenButton.style.display = "none"
         galleryCloseButton.style.display = "inline"
     }else{
         gallery.classList.remove('galleryTop')
@@ -27,5 +28,6 @@ function fotoFunction(){
 // functie dat wordt gebruikt bij klik van logo
 function logoFunction(){
     gallery.classList.remove('galleryTop')
+    galleryOpenButton.style.display = "inline"
     galleryCloseButton.style.display = "none"
 }
