@@ -20,8 +20,10 @@ function fotoFunction(){
     fotoPersoon = document.querySelector('.gallery')
     fotoPersoon.classList.remove('galleryTop')
     galleryOpenButton.style.display = "inline"
+    galleryCloseButton.style.display = "none"
 }
 
 function logoFunction(){
     gallery.classList.remove('galleryTop')
+    galleryCloseButton.style.display = "none"
 }
