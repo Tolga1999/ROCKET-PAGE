@@ -552,10 +552,27 @@ a.knop {
 
   .first_text_swipe {
     display: inline;
+    font-size: 3.25em;
   }
 
   .first_text_scroll {
     display: none;
+  }
+
+  .mainschrift{
+    margin-top: 10vh;
+  }
+
+  .content_container{
+    font-size: 1.4em
+  }
+  
+  #galleryOpenButton{
+    height: 4.5vh;
+  }
+
+  .subtext{
+    width: 40vw;
   }
 
   /* hover hiden door zelfde background color */
