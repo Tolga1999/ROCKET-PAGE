@@ -1,7 +1,7 @@
 ![image](https://user-images.githubusercontent.com/60781257/191000705-25be0c8c-7cc0-4469-bef7-6955136c8203.png)
 _________________________________________________________________________________________________
 
-:rocket: INHOUDSOPGAVEN :rocket:
+:rocket: INHOUDSOPGAVE :rocket:
 
  * Introductie
  * Live versie
